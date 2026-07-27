@@ -1,0 +1,122 @@
+.review-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 20px;
+}
+
+.review-modal-card {
+  background: white;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: scaleIn 0.2s ease-out;
+}
+
+.review-modal-header {
+  padding: 18px 20px;
+  border-bottom: 1px solid #E2E8F0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-modal-header h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 800;
+  color: #0F172A;
+}
+
+.review-modal-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review-subtitle {
+  font-size: 13px;
+  color: #64748B;
+  margin: 0;
+}
+
+.review-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #F8FAFC;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #E2E8F0;
+}
+
+.review-check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.review-check-item strong {
+  display: block;
+  font-size: 14px;
+  color: #0F172A;
+}
+
+.review-check-item p {
+  margin: 2px 0 0 0;
+  font-size: 13px;
+  color: #475569;
+}
+
+.official-platform-note {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #059669;
+  background: #ECFDF5;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.review-modal-footer {
+  padding: 16px 20px;
+  border-top: 1px solid #E2E8F0;
+  display: flex;
+  gap: 12px;
+  background: white;
+}
+
+.btn-review-cancel {
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #CBD5E1;
+  background: white;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #475569;
+  cursor: pointer;
+}
+
+.btn-review-confirm {
+  flex: 1.5;
+  padding: 14px;
+  border: none;
+  background: #059669;
+  color: white;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.2);
+}

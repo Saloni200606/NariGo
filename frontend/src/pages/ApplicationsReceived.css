@@ -1,0 +1,164 @@
+.applications-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #FFF0F3 0%, #FCECF0 100%);
+  padding: 24px;
+}
+
+.applications-main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.applications-header {
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.applications-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.applications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.application-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(242, 229, 232, 0.8);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(176, 18, 85, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.app-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--color-border-light);
+  padding-bottom: 16px;
+}
+
+.applicant-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 4px;
+}
+
+.applicant-id {
+  font-size: 13px;
+  color: var(--color-text-small);
+}
+
+.app-status {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-Pending {
+  background: rgba(245, 158, 11, 0.1);
+  color: #F59E0B;
+}
+
+.status-Shortlisted {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3B82F6;
+}
+
+.status-Hired {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10B981;
+}
+
+.status-Rejected {
+  background: rgba(239, 68, 68, 0.1);
+  color: #EF4444;
+}
+
+.app-card-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.app-detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--color-text-dark);
+}
+
+.app-detail-icon {
+  color: var(--color-text-small);
+}
+
+.app-card-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.btn-shortlist {
+  background: white;
+  border-color: #3B82F6;
+  color: #3B82F6;
+}
+.btn-shortlist:hover {
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.btn-hire {
+  background: white;
+  border-color: #10B981;
+  color: #10B981;
+}
+.btn-hire:hover {
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.btn-reject {
+  background: white;
+  border-color: #EF4444;
+  color: #EF4444;
+}
+.btn-reject:hover {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  color: var(--color-text-small);
+}
+
+@media (max-width: 767px) {
+  .app-card-body {
+    grid-template-columns: 1fr;
+  }
+  .app-card-actions {
+    flex-wrap: wrap;
+  }
+  .action-btn {
+    flex: 1;
+    justify-content: center;
+  }
+  .app-card-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

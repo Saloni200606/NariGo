@@ -1,0 +1,159 @@
+.candidate-profile-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #FFF0F3 0%, #FCECF0 100%);
+  padding: 24px;
+}
+
+.candidate-profile-main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.candidate-header {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.candidate-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.candidate-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(242, 229, 232, 0.8);
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(176, 18, 85, 0.05);
+}
+
+.candidate-top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--color-border-light);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+.candidate-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 4px;
+}
+
+.candidate-id {
+  font-size: 14px;
+  color: var(--color-text-small);
+  margin-bottom: 8px;
+}
+
+.candidate-status-badge {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.candidate-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.btn-call {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+}
+
+.btn-message {
+  background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+}
+
+.candidate-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.detail-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail-label {
+  font-size: 13px;
+  color: var(--color-text-small);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-value {
+  font-size: 16px;
+  color: var(--color-text-dark);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.decision-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border-light);
+}
+
+.decision-btn {
+  flex: 1;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+  background: white;
+}
+
+@media (max-width: 767px) {
+  .candidate-top-section {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .candidate-details-grid {
+    grid-template-columns: 1fr;
+  }
+  .decision-actions {
+    flex-direction: column;
+  }
+}

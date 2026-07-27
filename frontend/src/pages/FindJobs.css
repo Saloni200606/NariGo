@@ -1,0 +1,243 @@
+.findjobs-container {
+    min-height: 100vh;
+    background: #fff8fb;
+    padding: 40px 8%;
+    font-family: Poppins, sans-serif;
+}
+
+/* Hero */
+
+.hero-section {
+
+    background: linear-gradient(135deg, #ff5b96, #ff8db4);
+
+    color: white;
+
+    border-radius: 25px;
+
+    padding: 50px;
+
+    text-align: center;
+
+    margin: 35px 0;
+
+    box-shadow: 0 20px 40px rgba(255, 90, 140, .25);
+
+}
+
+.hero-section h1 {
+
+    font-size: 42px;
+
+    margin: 15px 0;
+
+}
+
+.hero-section p {
+
+    font-size: 18px;
+
+    opacity: .95;
+
+}
+
+.findjobs-navbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 35px;
+
+}
+
+.findjobs-logo {
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    color: #B01255;
+
+}
+
+/* Back */
+
+.back-btn {
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background: white;
+
+    cursor: pointer;
+
+    font-size: 22px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .12);
+
+    transition: .3s;
+}
+
+.back-btn:hover {
+
+    background: #F43F75;
+
+    color: white;
+
+}
+
+/* Search */
+
+.job-search {
+
+    width: 60%;
+
+    margin-top: 30px;
+
+    padding: 16px;
+
+    border-radius: 40px;
+
+    border: none;
+
+    font-size: 16px;
+
+}
+
+/* Title */
+
+.section-title {
+
+    font-size: 30px;
+
+    color: #c2185b;
+
+    margin-bottom: 30px;
+
+}
+
+/* Grid */
+
+.jobs-grid {
+
+    display: grid;
+
+    gap: 25px;
+
+}
+
+/* Card */
+
+.job-card {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+
+    transition: .3s;
+
+    cursor: pointer;
+
+}
+
+.job-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(233, 30, 99, .2);
+
+}
+
+.job-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+.job-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    border-radius: 50%;
+
+    background: #ffe4ef;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 34px;
+
+}
+
+.job-card h3 {
+
+    color: #c2185b;
+
+    margin-bottom: 8px;
+
+}
+
+.job-card p {
+
+    color: #666;
+
+}
+
+.explore-btn {
+
+    background: #e91e63;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 24px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+}
+
+.explore-btn:hover {
+
+    background: #c2185b;
+
+}
+
+.active-link {
+
+    color: #e91e63;
+
+    font-weight: 700;
+
+}
